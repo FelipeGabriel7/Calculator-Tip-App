@@ -1,0 +1,52 @@
+@use '../1-Base/variables'
+    
+
+%iptn-style
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: 0.4em
+    padding: 0.8em
+   
+    border-radius: 0.5em
+    background: variables.$light-gravish
+  
+    
+
+
+
+
+.iptn-background
+    @extend %iptn-style
+
+
+    .iptn
+        background: transparent
+        border: none
+        outline: transparent
+        text-align: end
+        padding: 0.3em
+        font-size: 1em
+        color: #000
+        font-weight: 700
+        color: variables.$very-dark
+
+   
+
+
+
+.lb
+    display: flex
+    color: variables.$very-dark
+    gap: 0.8em
+    flex-direction: column
+
+.custom
+    text-align: center
+    background: #efefef
+    padding: 0.8em
+    width: 25%
+    border-radius: 0.6em
+    color: #000
+    font-weight: 700
+    color: variables.$very-dark

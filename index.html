@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css"/>
+    <title> Tip Calculator App </title>
+</head>
+<body>
+    <main>
+        <section class="calculator-component">
+
+            <div class="container-calculator-app">
+
+                <div class="container-calculator">
+
+                    <div class="calculator-input-value">
+
+                        <label class="lb label-value">
+                            Bill
+                            <div class="iptn-background">
+                                <i class="fa-solid fa-dollar-sign"></i>
+                                <input type="number" class="iptn iptn-value" min="0" />
+                            </div>
+                            
+                        </label>
+
+                        <span class="error-message"></span>
+                        
+                    </div>
+    
+                    <div class="calculator-percentual-tip">
+                        <h3> Select Tip % </h3>
+    
+                        <div class="options select">
+                            <button class="btn" value="5"> 5%</button>
+                            <button class="btn" value="10"> 10%</button>
+                            <button class="btn" value="15"> 15% </button>
+                            <button class="btn" value="25"> 25% </button>
+                            <button class="btn" value="50"> 50% </button>
+                            <input class="custom custom-iptn-tip" placeholder="custom" type="number" min="0" max="99">
+                        </div>
+                    </div>
+
+                    <div class="number-people">
+
+
+                        <label class="lb label-people">
+                            Number of People
+                            <div class="iptn-background">
+                                <i class="fa-solid fa-user"></i> <input type="number"  placeholder="" class="iptn iptn-people-number" min="0"   />
+                            </div>
+                            
+                        </label>
+
+                        
+                        <span class="error-message"></span>
+                        
+    
+                    </div>
+                </div>
+
+                <div class="result-calculator">
+
+                    <div class="calculator-items">
+                        <div class="result-calculator-amount">
+                            <p> Tip Amount <span class="person"> /person </span> </p>
+                            <span class="result result-calculator-amount-value"> $ 0.00</span>
+                        </div>
+                        <div class="result-calculator-total">
+                            <p> Total <span class="person"> /person </span> </p>
+                            <span class="result result-calculator-amount-value-total"> $ 00.00 </span>
+                        </div>
+
+                    </div>
+                    
+
+                    <button class="reset-value"> Reset </button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <script src="https://kit.fontawesome.com/996eb60dc7.js" crossorigin="anonymous"></script>
+    <script src="Js/main.js"></script>
+</body>
+</html>
