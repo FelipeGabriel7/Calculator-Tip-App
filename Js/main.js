@@ -14,8 +14,9 @@ let valuePercent = 0;
 let resultTotal = 0;
 let resultAmount = 0;
 
-function calculate(){
 
+
+function calculate(){
    
     btnPercent.forEach((btn) => {
         btn.addEventListener('click' , () => {
@@ -24,12 +25,10 @@ function calculate(){
             if(valueAccount.value === 0 || valueAccount.value === null || valueAccount.value === '') return errorMessage(' O numero deve ser diferente de 0 ');
 
     
-
             valuePercent = Number((btn.value / 100) * numberPeople.value);
 
             resultAmount = ((valueAccount.value / numberPeople.value)  * valuePercent) ;
             resultTotal = valueAccount.value / numberPeople.value;
-
             amount.innerHTML = ' $ ' + resultAmount.toFixed(2)
             total.innerHTML = ' $ ' + resultTotal.toFixed(2)
 

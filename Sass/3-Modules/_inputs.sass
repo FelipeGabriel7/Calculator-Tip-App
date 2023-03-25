@@ -1,4 +1,5 @@
 @use '../1-Base/variables'
+@use '../1-Base/medias'
     
 
 %iptn-style
@@ -7,20 +8,16 @@
     align-items: center
     gap: 0.4em
     padding: 0.8em
-   
     border-radius: 0.5em
     background: variables.$light-gravish
   
-    
-
-
-
 
 .iptn-background
     @extend %iptn-style
 
 
     .iptn
+        width: 100%
         background: transparent
         border: none
         outline: transparent
@@ -50,3 +47,10 @@
     color: #000
     font-weight: 700
     color: variables.$very-dark
+
+    @include medias.tablet
+        width: 30%
+
+    @include medias.mobile
+        width: 42%
+        gap: 1em

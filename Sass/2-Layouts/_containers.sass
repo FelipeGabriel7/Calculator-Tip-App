@@ -3,18 +3,18 @@
 @use 'resultlayout'
 
 
-
 .container-calculator-app
     margin: 8em auto
-    width: 60%
-    height: 400px
+    max-width: 80%
+    min-height: 400px
     border-radius: 0.8em 
-    padding: 4em
+    padding: 2em
     box-shadow: 0.2em 0.2em 0.2em #4444442f
     background: variables.$white
     display: flex
     justify-content: center
     align-items: center
+    flex-wrap: wrap
     gap: 3em
 
     
@@ -22,8 +22,7 @@
     margin: 0.2em
     padding: 2em
     gap: 1.5em
-    width: 50%
-    height: 300px
+    min-height: 400px
     display: flex
     justify-content: space-evenly
     flex-direction: column
@@ -31,9 +30,8 @@
 .result-calculator
     padding: 2em
     gap: 1em
+    min-height: 400px
     background: variables.$very-dark
-    width: 60%
-    height: 350px
     border-radius: 0.8em
     display: flex
     color: variables.$white

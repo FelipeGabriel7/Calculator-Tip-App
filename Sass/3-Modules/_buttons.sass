@@ -1,14 +1,23 @@
 @use '../1-Base/variables'
+@use '../1-Base/medias'
 
 %button-style
     border: none
     padding: 0.5em 1.4em
     font-size: 1em
+    width: 25%
     font-weight: 600
     text-align: center
     border-radius: 0.5em
     background: variables.$very-dark
     color: variables.$white
+
+    @include medias.tablet
+        width: 30%
+
+    @include medias.mobile
+        width: 42%
+        gap: 1em
 
     &:hover
         transition: .5s all ease-in-out

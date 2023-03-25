@@ -93,15 +93,16 @@ input {
 
 .container-calculator-app {
   margin: 8em auto;
-  width: 60%;
-  height: 400px;
+  max-width: 80%;
+  min-height: 400px;
   border-radius: 0.8em;
-  padding: 4em;
+  padding: 2em;
   box-shadow: 0.2em 0.2em 0.2em rgba(68, 68, 68, 0.1843137255);
   background: hsl(0, 0%, 100%);
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 3em;
 }
 
@@ -109,8 +110,7 @@ input {
   margin: 0.2em;
   padding: 2em;
   gap: 1.5em;
-  width: 50%;
-  height: 300px;
+  min-height: 400px;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
@@ -119,9 +119,8 @@ input {
 .result-calculator {
   padding: 2em;
   gap: 1em;
+  min-height: 400px;
   background: hsl(183, 100%, 15%);
-  width: 60%;
-  height: 350px;
   border-radius: 0.8em;
   display: flex;
   color: hsl(0, 0%, 100%);
@@ -141,11 +140,23 @@ input {
   border: none;
   padding: 0.5em 1.4em;
   font-size: 1em;
+  width: 25%;
   font-weight: 600;
   text-align: center;
   border-radius: 0.5em;
   background: hsl(183, 100%, 15%);
   color: hsl(0, 0%, 100%);
+}
+@media (max-width: 768px) {
+  .btn {
+    width: 30%;
+  }
+}
+@media (max-width: 500px) {
+  .btn {
+    width: 42%;
+    gap: 1em;
+  }
 }
 .btn:hover {
   transition: 0.5s all ease-in-out;
@@ -179,6 +190,7 @@ input {
 }
 
 .iptn-background .iptn {
+  width: 100%;
   background: transparent;
   border: none;
   outline: transparent;
@@ -206,6 +218,17 @@ input {
   color: #000;
   font-weight: 700;
   color: hsl(183, 100%, 15%);
+}
+@media (max-width: 768px) {
+  .custom {
+    width: 30%;
+  }
+}
+@media (max-width: 500px) {
+  .custom {
+    width: 42%;
+    gap: 1em;
+  }
 }
 
 .result {
